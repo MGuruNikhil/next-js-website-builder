@@ -1,5 +1,3 @@
-
-
 export const metadata = {
   title: "website builder",
   description: "next js website builder",
