@@ -2,7 +2,6 @@ import { Toolbar, ItemTypes } from './toolbar'
 import { useDrop } from 'react-dnd'
 import Div from './div'
 
-
 const Home = () => {
   const [divs, setdivs] = useState([])
 
@@ -47,3 +46,5 @@ const Home = () => {
     </div>
   );
 }
+
+export default Home
