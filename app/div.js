@@ -1,12 +1,12 @@
 import React from 'react'
 import { useDrop } from 'react-dnd'
-import { ItemTypes } from './Toolbar'
+import { ItemTypes } from './toolbar'
 
 const Div = ({ type, content, onEdit, onDelete }) => {
   const [, drop] = useDrop(() => ({
     accept: [ItemTypes.TEXT, ItemTypes.IMAGE],
     drop: (item) => {
-        // puku naaku
+      //pm
     },
   }))
 
