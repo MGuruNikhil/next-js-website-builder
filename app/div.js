@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/Image'
 import { useDrop } from 'react-dnd'
 import { ItemTypes } from './toolbar'
 
@@ -17,7 +18,7 @@ const Div = ({ type, content, onEdit, onDelete }) => {
           {content}
         </div>
       )}
-      {type === 'image' && <img src={content} alt="image" />}
+      {type === 'image' && <Image src={content} alt="image" />}
       <button onClick={onDelete}>delete</button>
     </div>
   )
