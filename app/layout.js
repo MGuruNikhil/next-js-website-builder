@@ -8,6 +8,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="stylesheet" href="https://cdn.tailwindcss.com"/>
+      </head>
+
       <body>{children}</body>
     </html>
   );
