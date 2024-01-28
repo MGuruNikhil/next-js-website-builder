@@ -35,8 +35,8 @@ const Home = () => {
     {divs.map((div, index) => (
           <div
             key={index}
-            type={section.type}
-            content={section.content}
+            type={div.type}
+            content={div.content}
             onEdit={(content) => handleEdit(index, content)}
             onDelete={() => handleDelete(index)}
           />
