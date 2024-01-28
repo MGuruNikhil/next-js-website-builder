@@ -18,7 +18,7 @@ const Home = () => {
   }
 
   const handleSave = () => {
-    console.log('saved divs:', divs);
+    console.log('saved divs:', divs)
   }
 
   const [, drop] = useDrop(() => ({
