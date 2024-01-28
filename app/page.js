@@ -18,7 +18,8 @@ const Home = () => {
   }
 
   const handleSave = () => {
-    console.log('saved divs:', divs)
+    body = getElementById('body')
+    console.log('saved divs:', body.innerHTML)
   }
 
   const [, drop] = useDrop(() => ({
@@ -29,20 +30,19 @@ const Home = () => {
   }))
 
   return (
-    <div className="bg-black flex min-h-screen">
-    <Toolbar/>
-    <div ref={drop} className="bg-blue-300 grow-[2] p-5 flex flex-col gap-2">
-    {divs.map((div, index) => (
-          <div
-            key={index}
-            type={div.type}
-            content={div.content}
-            onEdit={(content) => handleEdit(index, content)}
-            onDelete={() => handleDelete(index)}
-          />
-        ))}
+    <div className="bg-black flex min-h-screen" id='body'>
+      <Toolbar/>
+      <div ref={drop} className="bg-blue-300 grow-[2] p-5 flex flex-col gap-2">
+        {divs.map((div, index) => (
+            <div
+              key={index}
+              type={div.type}
+              content={div.content}
+              onEdit={(content) => handleEdit(index, content)}
+              onDelete={() => handleDelete(index)}
+            />
+          ))}
       </div>
     </div>
-    </div>  
   );
 }
