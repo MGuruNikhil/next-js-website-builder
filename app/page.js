@@ -1,5 +1,6 @@
 import { Toolbar, ItemTypes } from '../components/Toolbar'
 import { useDrop } from 'react-dnd'
+import Div from './div'
 
 
 const Home = () => {
@@ -34,7 +35,7 @@ const Home = () => {
       <Toolbar/>
       <div ref={drop} className="bg-blue-300 grow-[2] p-5 flex flex-col gap-2">
         {divs.map((div, index) => (
-            <div
+            <Div
               key={index}
               type={div.type}
               content={div.content}
