@@ -1,4 +1,4 @@
-import { Toolbar, ItemTypes } from '../components/Toolbar'
+import { Toolbar, ItemTypes } from './toolbar'
 import { useDrop } from 'react-dnd'
 import Div from './div'
 
