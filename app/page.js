@@ -24,7 +24,7 @@ const Home = () => {
   const [, drop] = useDrop(() => ({
     accept: [ItemTypes.TEXT, ItemTypes.IMAGE],
     drop: (item) => {
-      setdivs([...divs, { type: item.type, content: item.type === 'text' ? 'New Text' : 'image-url' }])
+      setdivs([...divs, { type: item.type, content: item.type === 'text' ? 'new Text' : 'image-url' }])
     },
   }))
 
