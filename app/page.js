@@ -19,7 +19,7 @@ const Home = () => {
   }
 
   const handleSave = () => {
-    body = getElementById('body')
+    body = document.getElementById('body')
     console.log('saved divs:', body.innerHTML)
   }
 
